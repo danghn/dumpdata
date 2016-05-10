@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.betbrain.b3</groupId>
+	<artifactId>dumpdata</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>dumpdata</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	<!-- 
+		<dependency>
+			<groupId>betbrain</groupId>
+			<artifactId>connector</artifactId>
+			<version>2.6.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/SEPC-connector-2.6.jar</systemPath>
+		</dependency>
+		 -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+<!--
+		Add this dependency for serialize and deserialize an Bean to Json 
+ -->		
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>net.sf.flexjson</groupId>
+            <artifactId>flexjson</artifactId>
+            <version>3.0</version> <!-- This may not be the current version. Check the above link -->
+        </dependency>
+        
+        <dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-dynamodb</artifactId>
+			<version>1.10.71</version>
+		</dependency>
+        
+		
+    
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.2.8.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.27</version>
+        </dependency>
+    </dependencies>
+	
+</project>
